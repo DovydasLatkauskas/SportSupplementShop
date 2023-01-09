@@ -13,14 +13,12 @@
   }
   
   #header{
-    border: 2px solid rgb(255, 0, 0);
     display:flex;
     justify-content: space-between;
     align-items: center;
   }
   
   #nav-bar ul{
-    border: 2px solid rgb(255, 0, 200);
     width: 35vw;
     font-size:1.2rem;
     display:flex;
@@ -29,8 +27,11 @@
     align-items: center;
   }
   
+  #nav-bar li{
+    margin: 0 10px;
+  }
+  
   #mailing-list{
-    border: 2px solid rgb(255, 0, 200);
     display:flex;
     justify-content: center;
     flex-direction: column;
@@ -51,4 +52,26 @@
     background-color:var(--secondary-color);
   }
   
+  #qualities{
+    max-width: 1000px;
+    margin: 0 auto;
+  }
   
+  .quality{
+    display:flex;
+    justify-content: space-around;
+    flex-direction: row;
+    box-sizing: border-box;
+  
+  }
+  
+  .icon{
+    font-size: 3rem;
+    margin: auto 0;
+  
+  }
+  
+  .q-desc{
+    width: 70%;
+    margin:0;
+  }
