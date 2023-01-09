@@ -54,7 +54,7 @@
   
   #qualities{
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 10px auto;
   }
   
   .quality{
@@ -74,4 +74,10 @@
   .q-desc{
     width: 70%;
     margin:0;
+  }
+  
+  #production{
+    border: 3px solid red;
+    margin: 10px auto;
+    text-align: center;
   }
