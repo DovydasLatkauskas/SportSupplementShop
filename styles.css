@@ -1,83 +1,165 @@
 :root{
-    --primary-color:rgb(240,240,240);
-    --secondary-color:rgb(100, 255, 100);
-  }
-  
-  li{
-    list-style-type: none;
-  }
-  
-  body{
-    background-color:var(--primary-color);
-    font-family: sans-serif;
-  }
-  
-  #header{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  #nav-bar ul{
-    width: 35vw;
-    font-size:1.2rem;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-  }
-  
-  #nav-bar li{
-    margin: 0 10px;
-  }
-  
-  #mailing-list{
-    display:flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 10px 0;
-  }
-  #mailing-list input, #mailing-list h2{
-    display:block;
-    margin: 1vw auto;
-  }
-  #email{
-    width:300px;
-    height:30px;
-  }
-  #submit{
-    font-size:1.5rem;
-    width:100px;
-    height:40px;
-    background-color:var(--secondary-color);
-  }
-  
-  #qualities{
-    max-width: 1000px;
-    margin: 10px auto;
-  }
-  
-  .quality{
-    display:flex;
-    justify-content: space-around;
-    flex-direction: row;
-    box-sizing: border-box;
-  
-  }
-  
-  .icon{
-    font-size: 3rem;
-    margin: auto 0;
-  
-  }
-  
-  .q-desc{
-    width: 70%;
-    margin:0;
-  }
-  
-  #production{
-    border: 3px solid red;
-    margin: 10px auto;
-    text-align: center;
-  }
+  --primary-color:rgb(240,240,240);
+  --secondary-color:rgb(101, 214, 101);
+}
+
+li{
+  list-style-type: none;
+}
+
+body{
+  background-color:var(--primary-color);
+  font-family: sans-serif;
+  font-size:18px;
+}
+
+#header{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  position:sticky;
+  top: 0;
+  background-color:var(--primary-color);
+}
+
+#nav-bar ul{
+  width: 35vw;
+  font-size:1.2rem;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#nav-bar li{
+  margin: 0 10px;
+  text-decoration:none;
+}
+
+a {
+color: #000;
+text-decoration: none;
+}
+
+#mailing-list{
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+#mailing-list input, #mailing-list h2{
+  display:block;
+  margin: 1vw auto;
+}
+
+#email{
+  width:300px;
+  height:30px;
+}
+#submit{
+  font-size:1.5rem;
+  width:100px;
+  height:40px;
+  background-color:var(--secondary-color);
+}
+
+section{
+  margin-top:15px;
+  margin-bottom:15px;
+}
+
+br{
+  height:20px;
+}
+
+#qualities{
+  max-width: 1000px;
+  margin: 10px auto;
+}
+
+.quality{
+  display:flex;
+  justify-content: space-around;
+  flex-direction: row;
+  box-sizing: border-box;
+
+}
+
+.icon{
+  font-size: 3rem;
+  margin: auto 0;
+
+}
+
+.q-desc{
+  width: 70%;
+  margin:0;
+}
+
+#production{
+  margin: 10px auto;
+  text-align: center;
+}
+
+#order{
+display:flex;
+margin: 10px auto;
+justify-content: center;
+max-width:1000px;
+min-width: 30vw;
+box-sizing: border-box;
+}
+
+
+
+.product{
+border:2px solid black;
+margin: 0 10px;
+width: calc(100%/3);
+
+display:flex;
+flex-direction: column;
+}
+
+.product li{
+margin: 0 10px 0 0;
+}
+
+.product h5{
+text-align:center;
+background-color:rgb(215,215,215);
+margin:0;
+padding-top:5%;
+padding-bottom:5%;
+min-height: 10%;
+font-size:1.2rem;
+}
+
+.product .buy-button{
+margin: 0 auto 10px auto;
+padding: 10;
+min-height:15%;
+min-width:30%;
+background-color:var(--secondary-color);
+}
+
+footer{
+background-color:rgb(215,215,215);
+min-height:90px;
+padding-right:7vw;
+}
+
+footer ul{
+display:flex;
+justify-content: flex-end;
+}
+
+footer li{
+margin:15px 10px;
+}
+
+footer p{
+text-align:right;
+margin:5px 10px 10px 0;
+}
